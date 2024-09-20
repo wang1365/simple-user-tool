@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ZbSkinNetCore.Sample/1.0.0": {
+        "dependencies": {
+          "ZbSkin": "1.0.0"
+        },
+        "runtime": {
+          "ZbSkinNetCore.Sample.dll": {}
+        }
+      },
+      "ZbSkin/1.0.0": {
+        "runtime": {
+          "ZbSkin.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZbSkinNetCore.Sample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ZbSkin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
