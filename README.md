@@ -1,4 +1,4 @@
-# simple-user-tool
+# User Management
 A simple user management tool
 
 # Technology
