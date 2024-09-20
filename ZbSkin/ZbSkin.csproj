@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows;net48</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableNETAnalyzers>false</EnableNETAnalyzers>
+    <OutputPath>..\Output\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Fonts\download\**" />
+    <EmbeddedResource Remove="Fonts\download\**" />
+    <None Remove="Fonts\download\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\download.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Fonts\iconfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

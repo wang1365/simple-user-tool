@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Images\device.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\Output\net6.0-windows\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\device.ico" />
+    <None Remove="Images\device.png" />
+    <None Remove="Images\Menu\About.png" />
+    <None Remove="Images\Menu\Data.png" />
+    <None Remove="Images\Menu\List.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\device.ico" />
+    <Content Include="Images\device.png" />
+    <Content Include="Images\Menu\About.png" />
+    <Content Include="Images\Menu\Data.png" />
+    <Content Include="Images\Menu\List.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZbSkin\ZbSkin.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
